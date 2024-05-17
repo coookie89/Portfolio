@@ -10,11 +10,11 @@ const AboutMe = () => {
 
     return (
         <>
-        <div style={{display: 'flex', width:'60%', height: '60%', margin: 'auto'}}>
+        <div style={{display: 'flex', width:'60%', maxHeight:'100%', margin: 'auto'}}>
             <div style={{backgroundColor: '#a5a5a5', width: '40%'}}>
                 <img alt='dp' src='../dp.jpg' style={{borderRadius: '50%', width: '100%', border: '8px solid #ddd'}}/>
             </div>
-            <div style={{backgroundColor: '#efefef', padding: '2%', width: '60%'}}>
+            <div style={{backgroundColor: '#efefef', padding: '2%', width: '60%', overflow: 'scroll'}}>
                 <h6>UNSW Student</h6>
                 <h2>Iris Yang</h2>
                 <p>

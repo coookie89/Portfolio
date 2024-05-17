@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
     <CNavbar className="bg-body-tertiary" expand="sm">
         <CContainer fluid>
-        <CNavbarBrand>IrisYang</CNavbarBrand>
+        <CNavbarBrand><h4>Iris Yang</h4></CNavbarBrand>
 
         <CNavbarToggler
             aria-controls="offcanvasNavbar2"

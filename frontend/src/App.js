@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div style={{position: 'relative', width:'100%', height: '80vh', backgroundColor: 'grey', padding: '20px'}}>
+      <div style={{position: 'relative', width:'100%', height: '90vh', backgroundColor: 'grey', padding: '20px'}}>
         <AboutMe />
       </div>
     </div>
