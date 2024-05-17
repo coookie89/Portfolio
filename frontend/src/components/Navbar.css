@@ -1,0 +1,11 @@
+.navbar-nav {
+    gap: 35px;
+}
+
+.offcanvas-body {
+    justify-content: flex-end;
+}
+
+.dropdown-menu.show {
+    right: 0;
+}
