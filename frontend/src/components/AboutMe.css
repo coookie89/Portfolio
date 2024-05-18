@@ -1,0 +1,55 @@
+.main-container {
+    display: flex;
+    width: 70%;
+    max-height: 100%;
+    margin: auto
+}
+
+.img-section {
+    background-color: #a5a5a5;
+    width: 40%;
+}
+
+.img-section img {
+    border-radius: 50%;
+    width: 100%;
+    border: 7px solid #ddd;
+}
+
+.text-section {
+    background-color: #efefef;
+    padding: 2%;
+    width: 60%;
+    overflow: scroll;
+}
+
+.text-section h6 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6e6e6e;
+}
+
+.text-section h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.text-section p {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+      flex-direction: column;
+      width: 90%;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+
+    .img-section {
+        margin: auto;
+        width: 70%;
+    }
+}
