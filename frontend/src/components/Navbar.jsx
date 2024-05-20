@@ -27,12 +27,12 @@ const Navbar = () => {
 
             <CNavbarNav>
                 <CNavItem>
-                    <CNavLink href="#" active>
+                    <CNavLink href="/" active>
                         About Me
                     </CNavLink>
                 </CNavItem>
                 <CNavItem>
-                    <CNavLink href="#">Resume</CNavLink>
+                    <CNavLink href="/resume">Resume</CNavLink>
                 </CNavItem>
                 <CDropdown variant="nav-item" popper={false}>
                     <CDropdownToggle color="secondary">Projects</CDropdownToggle>
