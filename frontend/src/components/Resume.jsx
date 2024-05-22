@@ -1,7 +1,7 @@
 import './Resume.css';
 
 const Resume = () => {
-    const pdfUrl = "../Resume_CienHwaYang.pdf";
+    const pdfUrl = "../Resume_ChienHwaYang.pdf";
     
     return (
         <div className='resume-container'>
