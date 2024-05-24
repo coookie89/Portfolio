@@ -10,7 +10,7 @@ const Projects = () => {
             <div className='section'>
                 <div className='url-preview-section'>
                     <Microlink
-                        url="http://www.youtube.com"
+                        url=""
                         media="logo"
                         size="large"
                         fetchData
@@ -31,6 +31,18 @@ const Projects = () => {
                         />
                         <Chip
                             label="Django"
+                            variant="outlined"
+                        />
+                        <Chip
+                            label="Python"
+                            variant="outlined"
+                        />
+                        <Chip
+                            label="SQLite"
+                            variant="outlined"
+                        />
+                        <Chip
+                            label="Postman"
                             variant="outlined"
                         />
                     </Stack>
@@ -60,11 +72,23 @@ const Projects = () => {
                             variant="outlined"
                         />
                         <Chip
-                            label="Python3"
+                            label="Python"
                             variant="outlined"
                         />
                         <Chip
                             label="php"
+                            variant="outlined"
+                        />
+                        <Chip
+                            label="HTML"
+                            variant="outlined"
+                        />
+                        <Chip
+                            label="CSS"
+                            variant="outlined"
+                        />
+                        <Chip
+                            label="MySQL"
                             variant="outlined"
                         />
                         

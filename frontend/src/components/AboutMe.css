@@ -6,7 +6,6 @@
 }
 
 .img-section {
-    background-color: #a5a5a5;
     width: 40%;
 }
 
@@ -17,7 +16,6 @@
 }
 
 .text-section {
-    background-color: #efefef;
     padding: 2%;
     width: 60%;
     overflow: scroll;
