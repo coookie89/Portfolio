@@ -2,6 +2,7 @@ import './AboutMe.css';
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 
 const AboutMe = () => {
 
@@ -11,6 +12,8 @@ const AboutMe = () => {
             url = 'https://github.com/coookie89'
         else if (type === 'linkedin')
             url = 'https://www.linkedin.com/in/chien-hwa-yang'
+        else if (type === 'resume')
+            url = './Resume_ChienHwaYang.pdf'
         window.open(url);
     };
 
@@ -39,6 +42,11 @@ const AboutMe = () => {
                         avatar={<Avatar alt="LinkedIn" src="linkedin-icon.webp"/>}
                         label="LinkedIn"
                         onClick={() => openUrl('linkedin')}
+                    />
+                    <Chip
+                        avatar={<AccountCircleRoundedIcon />}
+                        label="Resume"
+                        onClick={() => openUrl('resume')}
                     />
                 </Stack>
             </div>
