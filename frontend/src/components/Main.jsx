@@ -3,9 +3,10 @@ import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
-import PageSlide from './PageSlide';
+// import PageSlide from './PageSlide';
 import About from './About';
 import Projects from './Projects';
+import Experience from './Experience';
 import './Main.css';
 
 const AboutMe = () => {
@@ -48,7 +49,7 @@ const AboutMe = () => {
                     <ul>
                         <li onClick={() => handleSectionOnclick('about')}>About</li>
                         <li onClick={() => handleSectionOnclick('experience')}>Experience</li>
-                        <li>Projects</li>
+                        <li onClick={() => handleSectionOnclick('projects')}>Projects</li>
                         <li>Education</li>
                     </ul>
                 </div>
@@ -77,6 +78,7 @@ const AboutMe = () => {
                 {/* <PageSlide checked={checked} section={section}/> */}
                 <div class='slide' style={{backgroundColor: '#a5a5a5'}}><About /></div>
                 <div class='slide'><Projects /></div>
+                <div class='slide'><Experience /></div>
             </div>
         </div>
         

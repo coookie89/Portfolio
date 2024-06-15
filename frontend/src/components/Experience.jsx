@@ -1,12 +1,12 @@
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-import './Projects.css';
+import './Experience.css';
 
-const Projects = () => {
+const Experience = () => {
     
     return (
         <>
-        <h3>Projects</h3>
+        <h3>Experience</h3>
             <div className='text-section'>
                 <h5>AnyParking</h5>
                 <p>
@@ -72,11 +72,10 @@ const Projects = () => {
                         label="MySQL"
                         variant="outlined"
                     />
-                    
                 </Stack>
             </div>
         </>
     )
 }
 
-export default Projects;
+export default Experience;
