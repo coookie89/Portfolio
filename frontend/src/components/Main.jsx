@@ -1,4 +1,6 @@
 import './Main.css';
+import Slide from './Slide';
+
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
@@ -20,14 +22,17 @@ const AboutMe = () => {
     return (
         <>
         <div className='main-container'>
-            <div className='left even'>
+            <div className='left'>
                 <div className='dp'>
                     <img alt='dp' src='../dp.jpg'/>
                 </div>
                 <div className='description'>
-                    <h2>Iris Yang</h2>
-                    <h6>UNSW Student</h6>
-                    <p style={{color: "red"}}>I build pixel-perfect, engaging, and accessible digital experiences.</p>
+                    {/* <h2>Iris Yang</h2>
+                    <h4>UNSW Student</h4>
+                    <p>I develop scalable, user-friendly web applications and am passionate about continuous learning.</p> */}
+
+                    <h2>Hello, My name is <b>Iris</b>.</h2>
+                    <h4>I'm a UNSW Student. I develop scalable, user-friendly web applications and am passionate about continuous learning.</h4>
                 </div>
                 <div className='menu'>
                     <ul>
@@ -58,14 +63,8 @@ const AboutMe = () => {
                     </Stack>
                 </div>
             </div>
-            <div className='right even'>
-                <h4>About</h4>
-                <p>
-                    Hello ! I'm a Computer Science bachelor's graduate from Taiwan currently pursuing a Master of Information Technology with a focus on Database System in UNSW, expected to complete my degree by May 2025.
-                    Experienced in website building(HTML/CSS & JavaScript), database design(SQL, Python), text-to-speech model application(PyTorch).
-                    Seeking an frontend/full-stack engineering internship to enhance my capabilities. I am eager to contribute my skills and learn from experienced professionals in a dynamic and collaborative environment.
-                </p>
-                
+            <div className='right'>
+                <Slide />
             </div>
         </div>
         
