@@ -1,14 +1,12 @@
-import './Main.css';
-import PageSlide from './PageSlide';
-import About from './About';
-import Projects from './Projects';
-
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
-
+import PageSlide from './PageSlide';
+import About from './About';
+import Projects from './Projects';
+import './Main.css';
 
 const AboutMe = () => {
     const [checked, setChecked] = React.useState(false);
