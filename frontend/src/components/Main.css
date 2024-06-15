@@ -16,17 +16,14 @@
 }
 
 .right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     background-color: #dee2f5;
     width: 70%;
     overflow-x: scroll;
-    height: 100%;
 }
 
-.right section {
-    height: 100%;
+.right .slide {
+    height: calc(100% - 50px - 50px);
+    padding: 50px 50px;
 }
 
 .dp {
@@ -43,35 +40,10 @@
     flex-grow: 2;
 }
 
-.text-section {
-    padding: 2%;
-    width: 60%;
-    overflow: scroll;
-}
-
-.text-section h6 {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #6e6e6e;
-}
-
-.text-section h2 {
-    font-size: 1.8rem;
-    font-weight: 800;
-}
-
-.text-section p {
-    font-size: 1rem;
-}
-
 @media only screen and (max-width: 600px) {
     .main-container {
       flex-direction: column;
       width: 90%;
-    }
-
-    .text-section {
-        width: 100%;
     }
 
     .img-section {

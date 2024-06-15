@@ -1,21 +1,13 @@
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-import Microlink from '@microlink/react'
 import './Projects.css';
 
 const Projects = () => {
     
     return (
-        <div className='projects-container'>
+        <>
+        <h3>Projects</h3>
             <div className='section'>
-                <div className='url-preview-section'>
-                    <Microlink
-                        url=""
-                        media="logo"
-                        size="large"
-                        fetchData
-                    />
-                </div>
                 <div className='text-section'>
                     <h5>AnyParking</h5>
                     <p>
@@ -50,14 +42,6 @@ const Projects = () => {
             </div>
 
             <div className='section'>
-                <div className='url-preview-section'>
-                    <Microlink
-                        url="http://lmtracemap.cgu.edu.tw/hua_map/test/upload.php"
-                        media="logo"
-                        size="large"
-                        fetchData
-                    />
-                </div>
                 <div className='text-section'>
                     <h5>LmTraceMap</h5>
                     <p>
@@ -95,9 +79,7 @@ const Projects = () => {
                     </Stack>
                 </div>
             </div>
-
-            
-        </div>
+        </>
     )
 }
 

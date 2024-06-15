@@ -1,12 +1,24 @@
 import './Main.css';
-import Slide from './Slide';
+import PageSlide from './PageSlide';
+import About from './About';
+import Projects from './Projects';
 
+import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 
+
 const AboutMe = () => {
+    const [checked, setChecked] = React.useState(false);
+    const [section, setSection] = React.useState('about');
+
+
+    const handleSectionOnclick = (type) => {
+        setSection(type);
+        setChecked((prev) => !prev);
+    }
 
     const openUrl = (type) => {
         let url;
@@ -36,8 +48,8 @@ const AboutMe = () => {
                 </div>
                 <div className='menu'>
                     <ul>
-                        <li>About</li>
-                        <li>Experience</li>
+                        <li onClick={() => handleSectionOnclick('about')}>About</li>
+                        <li onClick={() => handleSectionOnclick('experience')}>Experience</li>
                         <li>Projects</li>
                         <li>Education</li>
                     </ul>
@@ -64,7 +76,9 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className='right'>
-                <Slide />
+                {/* <PageSlide checked={checked} section={section}/> */}
+                <div class='slide' style={{backgroundColor: '#a5a5a5'}}><About /></div>
+                <div class='slide'><Projects /></div>
             </div>
         </div>
         
