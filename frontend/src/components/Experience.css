@@ -22,8 +22,13 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.exp-section:hover .company-name {
+.company-name {
     text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 400ms;
+}
+.exp-section:hover .company-name {
+    text-decoration-color: black;
 }
 
 .exp-section h4, .proj-section h4 {
