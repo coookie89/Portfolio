@@ -1,14 +1,11 @@
-.text-section {
-    overflow: scroll;
+.exp-section {
+    display: flex;
 }
 
-@media only screen and (max-width: 600px) {
-    .section {
-      flex-direction: column;
-    }
+.exp-left {
+    width: 30%;
+}
 
-    .text-section, .url-preview-section {
-        width: 100%;
-    }
-
+.exp-right {
+    width: 70%;
 }
