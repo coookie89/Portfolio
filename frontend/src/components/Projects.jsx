@@ -13,7 +13,7 @@ const openUrl = (type) => {
 const Projects = () => {
   return (
     <>
-      <h3>Projects</h3>
+      <h2>Projects</h2>
       <div className="proj-section">
         <h4>AnyParking</h4>
         <p>

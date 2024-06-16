@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <>
-        <h3>About</h3>
+        <h2>About</h2>
         <p>
             Hello ! I'm a Computer Science bachelor's graduate from Taiwan currently pursuing a Master of Information Technology with a focus on Database System in UNSW, expected to complete my degree by May 2025.
             Experienced in website building(HTML/CSS & JavaScript), database design(SQL, Python), text-to-speech model application(PyTorch).

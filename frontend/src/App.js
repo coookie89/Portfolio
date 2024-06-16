@@ -93,11 +93,13 @@ const App = () => {
               <Chip
                 avatar={<Avatar alt="LinkedIn" src="linkedin-icon.webp" />}
                 label="LinkedIn"
+                variant="outlined"
                 onClick={() => openUrl("linkedin")}
               />
               <Chip
                 avatar={<AccountCircleRoundedIcon />}
                 label="Resume"
+                variant="outlined"
                 onClick={() => openUrl("resume")}
               />
             </Stack>
@@ -105,21 +107,13 @@ const App = () => {
         </div>
         <div className="right">
           {/* <PageSlide checked={checked} section={section}/> */}
-          <div
-            class="slide"
-            ref={AboutRef}
-            style={{ backgroundColor: "#a5a5a5" }}
-          >
+          <div class="slide" ref={AboutRef}>
             <About />
           </div>
           <div class="slide" ref={ExpRef}>
             <Experience />
           </div>
-          <div
-            class="slide"
-            style={{ backgroundColor: "#a5a5a5" }}
-            ref={ProjectRef}
-          >
+          <div class="slide" ref={ProjectRef}>
             <Projects />
           </div>
           <div class="slide" ref={EduRef}>

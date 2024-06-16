@@ -16,7 +16,7 @@ const openUrl = (type) => {
 const Experience = () => {
   return (
     <>
-      <h3>Experience</h3>
+      <h2>Experience</h2>
       <div className="exp-section" onClick={() => openUrl('cgust')}>
         <div className="exp-left">
           <h4>Feb 2022 - Oct 2022</h4>

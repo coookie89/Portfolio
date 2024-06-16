@@ -16,7 +16,7 @@
 
 .exp-section:hover, .proj-section:hover {
     border-radius: 8px;
-    background-color: #eeeeee;
+    background-color: rgb(206, 231, 241);
     cursor: pointer;
     transition: background-color 1s ease;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);

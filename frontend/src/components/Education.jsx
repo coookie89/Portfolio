@@ -12,7 +12,7 @@ const openUrl = (type) => {
 const Experience = () => {
   return (
     <>
-      <h3>Education</h3>
+      <h2>Education</h2>
       <div className="exp-section" onClick={() => openUrl('cgu')}>
         <div className="exp-left">
           <h4>May 2023 - May 2025</h4>
