@@ -27,23 +27,18 @@ const Projects = () => {
                 <Stack direction="row" spacing={1}>
                     <Chip
                         label="React"
-                        variant="outlined"
                     />
                     <Chip
                         label="Django"
-                        variant="outlined"
                     />
                     <Chip
                         label="Python"
-                        variant="outlined"
                     />
                     <Chip
                         label="SQLite"
-                        variant="outlined"
                     />
                     <Chip
                         label="Postman"
-                        variant="outlined"
                     />
                 </Stack>
             </div>
@@ -59,27 +54,21 @@ const Projects = () => {
                 <Stack direction="row" spacing={1}>
                     <Chip
                         label="VanillaJS"
-                        variant="outlined"
                     />
                     <Chip
                         label="Python"
-                        variant="outlined"
                     />
                     <Chip
                         label="php"
-                        variant="outlined"
                     />
                     <Chip
                         label="HTML"
-                        variant="outlined"
                     />
                     <Chip
                         label="CSS"
-                        variant="outlined"
                     />
                     <Chip
                         label="MySQL"
-                        variant="outlined"
                     />
                     
                 </Stack>

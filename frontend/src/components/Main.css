@@ -36,6 +36,10 @@
     border: 7px solid #ddd;
 }
 
+ul li {
+    cursor: pointer;
+}
+
 .menu {
     flex-grow: 2;
 }

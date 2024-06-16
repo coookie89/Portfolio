@@ -7,14 +7,33 @@ import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import About from './About';
 import Projects from './Projects';
 import Experience from './Experience';
+import Education from './Education';
 import './Main.css';
 
 const Main = () => {
     const [checked, setChecked] = React.useState(false);
     const [section, setSection] = React.useState('about');
 
+    const AboutRef = React.useRef();
+    const ExpRef = React.useRef();
+    const EduRef = React.useRef();
+    const ProjectRef = React.useRef();
+
+    function handleBackClick(type) {
+        if (type === 'about')
+            AboutRef.current.scrollIntoView({ behavior: 'smooth' });
+        else if (type === 'experience')
+            ExpRef.current.scrollIntoView({ behavior: 'smooth' });
+        else if (type === 'projects')
+            ProjectRef.current.scrollIntoView({ behavior: 'smooth' });
+        else if (type === 'education')
+            EduRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+
+
 
     const handleSectionOnclick = (type) => {
+        handleBackClick(type);
         setSection(type);
         setChecked((prev) => !prev);
     }
@@ -50,7 +69,7 @@ const Main = () => {
                         <li onClick={() => handleSectionOnclick('about')}>About</li>
                         <li onClick={() => handleSectionOnclick('experience')}>Experience</li>
                         <li onClick={() => handleSectionOnclick('projects')}>Projects</li>
-                        <li>Education</li>
+                        <li onClick={() => handleSectionOnclick('education')}>Education</li>
                     </ul>
                 </div>
                 <div className='avatar'>
@@ -76,9 +95,10 @@ const Main = () => {
             </div>
             <div className='right'>
                 {/* <PageSlide checked={checked} section={section}/> */}
-                <div class='slide' style={{backgroundColor: '#a5a5a5'}}><About /></div>
-                <div class='slide'><Projects /></div>
-                <div class='slide' style={{backgroundColor: '#a5a5a5'}}><Experience /></div>
+                <div class='slide' ref={AboutRef} style={{backgroundColor: '#a5a5a5'}}><About /></div>
+                <div class='slide' ref={ExpRef}><Experience /></div>
+                <div class='slide' style={{backgroundColor: '#a5a5a5'}}  ref={ProjectRef}><Projects /></div>
+                <div class='slide' ref={EduRef}><Education /></div>
             </div>
         </div>
         

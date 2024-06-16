@@ -36,9 +36,9 @@ const Experience = () => {
             flexWrap="wrap"
             useFlexGap
           >
-            <Chip label="Python" variant="outlined" />
-            <Chip label="Amazon EC2" variant="outlined" />
-            <Chip label="Line" variant="outlined" />
+            <Chip label="Python"/>
+            <Chip label="Amazon EC2"/>
+            <Chip label="Line"/>
           </Stack>
         </div>
       </div>
@@ -61,8 +61,8 @@ const Experience = () => {
             flexWrap="wrap"
             useFlexGap
           >
-            <Chip label="Python" variant="outlined" />
-            <Chip label="BeautifulSoup" variant="outlined" />
+            <Chip label="Python"/>
+            <Chip label="BeautifulSoup"/>
           </Stack>
         </div>
       </div>
@@ -86,13 +86,13 @@ const Experience = () => {
             flexWrap="wrap"
             useFlexGap
           >
-            <Chip label="Python" variant="outlined" />
-            <Chip label="Pytorch" variant="outlined" />
-            <Chip label="Tacotron" variant="outlined" />
-            <Chip label="Tacotron2" variant="outlined" />
-            <Chip label="SQL" variant="outlined" />
-            <Chip label="MySQL" variant="outlined" />
-            <Chip label="Machine Learning" variant="outlined" />
+            <Chip label="Python"/>
+            <Chip label="Pytorch"/>
+            <Chip label="Tacotron"/>
+            <Chip label="Tacotron2"/>
+            <Chip label="SQL"/>
+            <Chip label="MySQL"/>
+            <Chip label="Machine Learning"/>
           </Stack>
         </div>
       </div>
