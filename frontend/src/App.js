@@ -57,13 +57,13 @@ const App = () => {
                     <h4>UNSW Student</h4>
                     <p>I develop scalable, user-friendly web applications and am passionate about continuous learning.</p> */}
 
-            <h2>
-              Hello, My name is <b>Iris</b>.
-            </h2>
-            <h4>
-              I'm a UNSW Student. I develop scalable, user-friendly web
-              applications and am passionate about continuous learning.
-            </h4>
+            <h1>
+              Hi, my name is <b>Iris</b>.
+            </h1>
+            <h3>
+              I develop scalable, user-friendly <b>web
+              applications</b> and am passionate about <b>continuous learning</b>.
+            </h3>
           </div>
           <div className="menu">
             <ul>

@@ -25,7 +25,7 @@ const Experience = () => {
           <h4>Linebot Developer</h4>
           <h4 className="company-name">Chang Gung University Of Science And Technology, Taiwan</h4>
           <p>
-            Developed Linebots using the LINE API SDKs, including profile page,
+            Developed Linebots using the <b>LINE API SDKs</b>, including profile page,
             patient list, Scale form, handbook of dementia care, viewing
             patient&#39;s record and exporting patient&#39;s history report in
             Excel format.
@@ -51,9 +51,9 @@ const Experience = () => {
           <h4>Python Teaching Assistant</h4>
           <h4 className="company-name">Chang Gung University, Taiwan</h4>
           <p>
-            Tutored 30+ students in learning Python from scratch, providing
-            guidance on fundamental concepts and empowered them to extract
-            information from websites they are interested in.
+            Tutored 30+ students in <b>learning Python from scratch</b>, providing
+            guidance on fundamental concepts and empowered them to <b>extract
+            information from websites</b> they are interested in.
           </p>
           <Stack
             direction="row"
@@ -75,9 +75,9 @@ const Experience = () => {
           <h4>Internship</h4>
           <h4 className="company-name">Academia Sinica, Taiwan</h4>
           <p>
-            Collected and reformatted 10,000+ terms of Taigi corpus database and
-            utilised PyTorch to train open-sourced text-to-speech (TTS) models
-            for Taigi, enhancing the availability of TTS resources for Taiwanese
+            Collected and reformatted 10,000+ terms of <b>Taigi corpus database</b> and
+            utilised PyTorch to <b>train open-sourced text-to-speech (TTS) models</b>
+            &nbsp;for Taigi, enhancing the availability of TTS resources for Taiwanese
             speakers.
           </p>
           <Stack

@@ -17,12 +17,12 @@ const Projects = () => {
       <div className="proj-section">
         <h4>AnyParking</h4>
         <p>
-          The Car Space Renting Management System connects parking suppliers and
-          customers. Providers can offer spots and establish fees, while
-          customers can browse, reserve, and pay for parking. The system
+          The <b>Car Space Renting Management System</b> connects parking suppliers and
+          customers. <b>Providers</b> can offer spots and establish fees, while&nbsp;
+          <b>customers</b> can browse, reserve, and pay for parking. The system
           provides security through user roles (admin, supplier, and consumer)
-          and contains capabili- ties for billing, payment, and feedback. This
-          platform intends to maximise parking space use, improve urban
+          and contains capabilities for billing, payment, and feedback. This
+          platform intends to <b>maximise parking space use</b>, improve urban
           mobility, and alleviate parking stress.
         </p>
         <Stack
@@ -42,10 +42,10 @@ const Projects = () => {
       <div className="proj-section" onClick={() => openUrl("LmTraceMap")}>
         <h4>LmTraceMap</h4>
         <p>
-          A global tracking website specifically designed for experts to monitor
-          the spread of L.monocytogenes, a challenging bacterium to track due to
-          its presence in food shipments worldwide. The platform aims to
-          facilitate comprehensive monitoring and data sharing, enabling experts
+          A <b>global tracking website</b> specifically designed for experts to <b>monitor
+          the spread of L.monocytogenes</b>, a challenging bacterium to track due to
+          its presence in food shipments worldwide. The platform <b>aims to
+          facilitate comprehensive monitoring and data sharing</b>, enabling experts
           from different regions to collaborate effectively in tracking
           L.monocytogenes outbreaks.
         </p>

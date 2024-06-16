@@ -49,7 +49,7 @@ p {
 } */
 
 .dp {
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
@@ -60,24 +60,37 @@ p {
 }
 
 ul {
-  list-style-image: '-----';
+  margin: 0;
+  font-family: system-ui;
+  list-style-image: url('./line.svg');
 }
 
 ul li {
   cursor: pointer;
 }
 
+ul {
+  margin: 5% 0;
+
+}
+
 .menu {
   flex-grow: 2;
-  padding: 0 15px;
 }
 
-.description h4 {
+.description h3  {
   margin: 0;
-  margin-bottom: 2px;
 }
 
-h2 {
+b {
+  font-weight: 600;
+}
+
+h1, h3, h5 {
+  font-weight: 100;
+}
+
+h1, h2 {
   color: rgb(116, 20, 215);
 }
 
