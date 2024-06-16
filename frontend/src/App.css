@@ -2,6 +2,13 @@ main {
   position: relative;
   width: 100vw;
   height: 100vh;
+  /* font-family: 'Lucida Grande', monospace; */
+  /* font-family: 'Tahoma', sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  font-family: system-ui;
 }
 
 .main-container {
@@ -42,6 +49,10 @@ main {
   width: calc(100% - 7px - 7px);
   border-radius: 50%;
   border: 7px solid #ddd;
+}
+
+ul {
+  list-style-image: '-----';
 }
 
 ul li {
