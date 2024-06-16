@@ -12,7 +12,7 @@ const Experience = () => {
         </div>
         <div className="exp-right">
           <h5>Linebot Developer</h5>
-          <h5>CHANG GUNG UNIVERSITY OF SCIENCE AND TECHNOLOGY, Taiwan</h5>
+          <h5>Chang Gung University Of Science And Technology, Taiwan</h5>
           <p>
             Developed Linebots using the LINE API SDKs, including profile page,
             patient list, Scale form, handbook of dementia care, viewing
@@ -37,7 +37,8 @@ const Experience = () => {
           <h5>Sep 2021 - Sep 2022</h5>
         </div>
         <div className="exp-right">
-          <h5>LmTraceMap</h5>
+          <h5>Python Teaching Assistant</h5>
+          <h5>Chang Gung University, Taiwan</h5>
           <p>
             Tutored 30+ students in learning Python from scratch, providing
             guidance on fundamental concepts and empowered them to extract
@@ -51,6 +52,35 @@ const Experience = () => {
           >
             <Chip label="Python" variant="outlined" />
             <Chip label="BeautifulSoup" variant="outlined" />
+          </Stack>
+        </div>
+      </div>
+      <div className="exp-section">
+        <div className="exp-left">
+          <h5>Sep 2021 - Sep 2022</h5>
+        </div>
+        <div className="exp-right">
+          <h5>Internship</h5>
+          <h5>Academia Sinica, Taiwan</h5>
+          <p>
+            Collected and reformatted 10,000+ terms of Taigi corpus database and
+            utilised PyTorch to train open-sourced text-to-speech (TTS) models
+            for Taigi, enhancing the availability of TTS resources for Taiwanese
+            speakers.
+          </p>
+          <Stack
+            direction="row"
+            spacing={{ xs: 1, sm: 1 }}
+            flexWrap="wrap"
+            useFlexGap
+          >
+            <Chip label="Python" variant="outlined" />
+            <Chip label="Pytorch" variant="outlined" />
+            <Chip label="Tacotron" variant="outlined" />
+            <Chip label="Tacotron2" variant="outlined" />
+            <Chip label="SQL" variant="outlined" />
+            <Chip label="MySQL" variant="outlined" />
+            <Chip label="Machine Learning" variant="outlined" />
           </Stack>
         </div>
       </div>

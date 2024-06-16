@@ -1,5 +1,6 @@
 .exp-section {
     display: flex;
+    padding: 10px 15px;
 }
 
 .exp-left {
@@ -8,4 +9,16 @@
 
 .exp-right {
     width: 70%;
+}
+
+.exp-section:hover {
+    border: 0.5px solid #ffffff;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.exp-section h5 {
+    margin: 0;
+    margin-bottom: 2px;
 }
