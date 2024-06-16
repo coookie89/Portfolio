@@ -1,6 +1,9 @@
 .exp-section {
     display: flex;
-    padding: 10px 15px;
+}
+
+.exp-section, .proj-section {
+    padding: 20px 15px;
 }
 
 .exp-left {
@@ -11,7 +14,7 @@
     width: 70%;
 }
 
-.exp-section:hover, .text-section:hover {
+.exp-section:hover, .proj-section:hover {
     border-radius: 8px;
     background-color: #eeeeee;
     cursor: pointer;
@@ -23,7 +26,7 @@
     text-decoration: underline;
 }
 
-.exp-section h5 {
+.exp-section h4, .proj-section h4 {
     margin: 0;
     margin-bottom: 2px;
 }

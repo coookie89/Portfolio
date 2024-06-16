@@ -19,11 +19,11 @@ const Experience = () => {
       <h3>Experience</h3>
       <div className="exp-section" onClick={() => openUrl('cgust')}>
         <div className="exp-left">
-          <h5>Feb 2022 - Oct 2022</h5>
+          <h4>Feb 2022 - Oct 2022</h4>
         </div>
         <div className="exp-right">
-          <h5>Linebot Developer</h5>
-          <h5 className="company-name">Chang Gung University Of Science And Technology, Taiwan</h5>
+          <h4>Linebot Developer</h4>
+          <h4 className="company-name">Chang Gung University Of Science And Technology, Taiwan</h4>
           <p>
             Developed Linebots using the LINE API SDKs, including profile page,
             patient list, Scale form, handbook of dementia care, viewing
@@ -45,11 +45,11 @@ const Experience = () => {
 
       <div className="exp-section" onClick={() => openUrl('cgu')}>
         <div className="exp-left">
-          <h5>Sep 2021 - Sep 2022</h5>
+          <h4>Sep 2021 - Sep 2022</h4>
         </div>
         <div className="exp-right">
-          <h5>Python Teaching Assistant</h5>
-          <h5 className="company-name">Chang Gung University, Taiwan</h5>
+          <h4>Python Teaching Assistant</h4>
+          <h4 className="company-name">Chang Gung University, Taiwan</h4>
           <p>
             Tutored 30+ students in learning Python from scratch, providing
             guidance on fundamental concepts and empowered them to extract
@@ -69,11 +69,11 @@ const Experience = () => {
 
       <div className="exp-section" onClick={() => openUrl('sinica')}>
         <div className="exp-left">
-          <h5>Sep 2021 - Sep 2022</h5>
+          <h4>Sep 2021 - Sep 2022</h4>
         </div>
         <div className="exp-right">
-          <h5>Internship</h5>
-          <h5 className="company-name">Academia Sinica, Taiwan</h5>
+          <h4>Internship</h4>
+          <h4 className="company-name">Academia Sinica, Taiwan</h4>
           <p>
             Collected and reformatted 10,000+ terms of Taigi corpus database and
             utilised PyTorch to train open-sourced text-to-speech (TTS) models

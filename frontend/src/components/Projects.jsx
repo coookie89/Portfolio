@@ -1,6 +1,6 @@
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-import './Projects.css';
+import './Experience.css';
 
 const openUrl = (type) => {
     let url;
@@ -16,8 +16,8 @@ const Projects = () => {
     return (
         <>
         <h3>Projects</h3>
-            <div className='text-section'>
-                <h5>AnyParking</h5>
+            <div className='proj-section'>
+                <h4>AnyParking</h4>
                 <p>
                 The Car Space Renting Management System connects parking suppliers and customers.
                 Providers can offer spots and establish fees, while customers can browse, reserve, and pay for parking.
@@ -43,8 +43,8 @@ const Projects = () => {
                 </Stack>
             </div>
 
-            <div className='text-section' onClick={() => openUrl('LmTraceMap')}>
-                <h5>LmTraceMap</h5>
+            <div className='proj-section' onClick={() => openUrl('LmTraceMap')}>
+                <h4>LmTraceMap</h4>
                 <p>
                 A global tracking website specifically designed for experts to monitor the spread of L.monocytogenes,
                 a challenging bacterium to track due to its presence in food shipments worldwide.
