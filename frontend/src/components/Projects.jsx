@@ -2,6 +2,15 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import './Projects.css';
 
+const openUrl = (type) => {
+    let url;
+    if (type === 'AnyParking')
+        url = '';
+    else if (type === 'LmTraceMap')
+        url = 'http://lmtracemap.cgu.edu.tw/hua_map/test/upload.php';
+    window.open(url);
+};
+
 const Projects = () => {
     
     return (
@@ -39,7 +48,7 @@ const Projects = () => {
                 </Stack>
             </div>
 
-            <div className='text-section'>
+            <div className='text-section' onClick={() => openUrl('LmTraceMap')}>
                 <h5>LmTraceMap</h5>
                 <p>
                 A global tracking website specifically designed for experts to monitor the spread of L.monocytogenes,

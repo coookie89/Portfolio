@@ -9,7 +9,7 @@ import Projects from './Projects';
 import Experience from './Experience';
 import './Main.css';
 
-const AboutMe = () => {
+const Main = () => {
     const [checked, setChecked] = React.useState(false);
     const [section, setSection] = React.useState('about');
 
@@ -78,7 +78,7 @@ const AboutMe = () => {
                 {/* <PageSlide checked={checked} section={section}/> */}
                 <div class='slide' style={{backgroundColor: '#a5a5a5'}}><About /></div>
                 <div class='slide'><Projects /></div>
-                <div class='slide'><Experience /></div>
+                <div class='slide' style={{backgroundColor: '#a5a5a5'}}><Experience /></div>
             </div>
         </div>
         
@@ -86,4 +86,4 @@ const AboutMe = () => {
     )
 }
 
-export default AboutMe;
+export default Main;

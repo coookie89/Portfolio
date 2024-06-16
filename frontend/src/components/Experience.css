@@ -11,11 +11,16 @@
     width: 70%;
 }
 
-.exp-section:hover {
-    border: 0.5px solid #ffffff;
+.exp-section:hover, .text-section:hover {
     border-radius: 8px;
     background-color: #eeeeee;
     cursor: pointer;
+    transition: background-color 1s ease;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exp-section:hover .company-name {
+    text-decoration: underline;
 }
 
 .exp-section h5 {
