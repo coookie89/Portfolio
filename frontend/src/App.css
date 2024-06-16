@@ -3,3 +3,61 @@ main {
   width: 100%;
   height: 100vh;
 }
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #6e6e6e;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9feed;
+  padding: 50px 50px;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.right {
+  background-color: #dee2f5;
+  width: 70%;
+  overflow-x: scroll;
+}
+
+.right .slide {
+  height: calc(100% - 50px - 50px);
+  padding: 50px 50px;
+}
+
+.dp {
+  height: 40%;
+}
+
+.dp img {
+  height: 100%;
+  border-radius: 50%;
+  border: 7px solid #ddd;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+.menu {
+  flex-grow: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .img-section {
+      margin: auto;
+      width: 70%;
+  }
+}
