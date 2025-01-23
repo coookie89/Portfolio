@@ -42,8 +42,9 @@ const App = () => {
     if (type === "github") url = "https://github.com/coookie89";
     else if (type === "linkedin")
       url = "https://www.linkedin.com/in/chien-hwa-yang";
-    else if (type === "resume") url = "./Resume_ChienHwaYang.pdf";
-    window.open(url);
+    else if (type === "resume") 
+      url = "./Resume_IrisYang.pdf";
+      window.open(url);
   };
 
   return (
