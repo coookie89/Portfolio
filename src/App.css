@@ -259,7 +259,7 @@ h3, h4, h5, h6 {
 
   .right .slide {
     min-height: auto;
-    padding: 50px;
+    padding: 20px 30px;
   }
 
   .intro {
@@ -286,13 +286,9 @@ h3, h4, h5, h6 {
 
 }
 
-
-
 @media only screen and (max-width: 650px) {
-  
   .intro {
     display: flex;
     flex-direction: column;
   }
-
 }
