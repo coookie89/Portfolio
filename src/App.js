@@ -70,7 +70,7 @@ const App = () => {
                 I develop scalable, user-friendly <b>web
                 applications</b> and am passionate about <b>continuous learning</b>.
               </h3> */}
-              Student based in Sydney, Australia.
+              IT Student based in Sydney, Australia.
             </div>
             <div className="menu">
               <ul>

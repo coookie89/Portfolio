@@ -20,6 +20,39 @@ const Experience = () => {
           onClick={() => openUrl("cgust")}
         >
           <div className="exp-right">
+            <h4>Marketing Coordinator</h4>
+            <h4 className="company-name">PICA Group, Sydney, Australia</h4>
+            <p>
+              Digitalized physical forms to streamline workflows. Extracted and
+              processed customer information from various data sources for
+              newsletters.
+            </p>
+            <Stack
+              direction="row"
+              spacing={{ xs: 1, sm: 1 }}
+              flexWrap="wrap"
+              useFlexGap
+            >
+              <Chip label="WordPress" />
+              <Chip label="GravityForms" />
+              <Chip label="Power Automate" />
+              <Chip label="Power Apps" />
+              <Chip label="PowerBI" />
+              <Chip label="Python" />
+              <Chip label="Regex" />
+              <Chip label="Salesforce" />
+            </Stack>
+          </div>
+          <div className="exp-left">
+            <h4>Feb 2022 - Present</h4>
+          </div>
+        </div>
+
+        <div
+          className="exp-section card-color"
+          onClick={() => openUrl("cgust")}
+        >
+          <div className="exp-right">
             <h4>Linebot Developer</h4>
             <h4 className="company-name">
               Chang Gung University Of Science And Technology, Taiwan
@@ -47,7 +80,6 @@ const Experience = () => {
         </div>
 
         <div className="exp-section card-color" onClick={() => openUrl("cgu")}>
-          
           <div className="exp-right">
             <h4>Python Teaching Assistant</h4>
             <h4 className="company-name">Chang Gung University, Taiwan</h4>
@@ -75,7 +107,6 @@ const Experience = () => {
           className="exp-section card-color"
           onClick={() => openUrl("sinica")}
         >
-          
           <div className="exp-right">
             <h4>Internship</h4>
             <h4 className="company-name">Academia Sinica, Taiwan</h4>
