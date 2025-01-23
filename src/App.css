@@ -1,7 +1,6 @@
 main {
   position: relative;
   width: 100vw;
-  height: 100vh;
   font-family: var(--secondary-font-family);
   color: var(--secondary-color);
   font-family: system-ui;
@@ -28,17 +27,22 @@ main {
   --font-size-bg: 1.8rem;
   --font-size-md: 1.2rem;
   --font-size-sm: 1rem;
+  --font-size-mn: 0.75rem;
 }
 
 
 .main-container {
   display: flex;
-  height: 100%;
+  gap: 10%;
+  height: 100vh;
 }
 
 .flexbox {
   display: flex;
-  gap: 10%;
+}
+
+.row {
+  flex-direction: row;
 }
 
 .pl-lg {
@@ -170,6 +174,36 @@ h3, h4, h5, h6 {
   font-weight: var(--secondary-font-weight);
 }
 
+.card {
+  padding: 20px 20px;
+}
+
+.main-container > .flexbox {
+  gap: 10%;
+}
+
+.card {
+  gap: 2%;
+}
+
+.card .left {
+  font-size: var(--font-size-mn);
+  width: 25%;
+}
+
+.card .right {
+  width: 75%;
+}
+
+.education p {
+  margin-bottom: 0;
+}
+
+.company-name {
+  font-weight: var(--bold-font-weight);
+}
+
+
 .card-color {
   background-color: var(--card-background-color);
   border: 1.5px solid var(--card-border-color);
@@ -193,7 +227,7 @@ h3, h4, h5, h6 {
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .main-container {
     flex-direction: column;
     height: auto;
@@ -201,20 +235,64 @@ h3, h4, h5, h6 {
     width: 100%;
   }
 
-  .left {
-    width: calc(100% - 50px - 50px);
+  .mr-lg, .ml-lg {
+    margin: 0;
   }
 
-  .right {
+  .card {
+    flex-direction: column;
+    height: auto;
+    overflow-y: scroll;
+  }
+
+  .left, .right {
     width: 100%;
+  }
+
+  .card .left, .card .right {
+    width: 100%;
+  }
+
+  .pt-md, .pb-md {
+    padding: 0;
   }
 
   .right .slide {
     min-height: auto;
-    padding: 50px 50px;
+    padding: 50px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
   }
 
   .dp {
     width: 60%;
+    padding: 0 40px;
   }
+
+  .left > .container {
+    padding: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .avatar {
+    padding: 20px 0;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

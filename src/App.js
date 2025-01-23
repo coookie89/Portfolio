@@ -42,36 +42,30 @@ const App = () => {
     setChecked((prev) => !prev);
   };
 
-  const openUrl = (type) => {
-    let url;
-    if (type === "github") url = "https://github.com/coookie89";
-    else if (type === "linkedin")
-      url = "https://www.linkedin.com/in/chien-hwa-yang";
-    else if (type === "resume") url = "./Resume_IrisYang.pdf";
-    window.open(url);
-  };
-
   return (
     <main>
       <div className="main-container mr-lg ml-lg">
-        <div className="flexbox">
-          <div className="left pt-md pb-md">
-            <div className="dp">
-              <img alt="dp" src="../dp.jpg" />
-            </div>
-            <h1>
-              Hi, I'm <b>Iris Yang</b>!
-            </h1>
-            <div className="description">
-              {/* <h2>Iris Yang</h2>
+        <div className="left pt-md pb-md">
+          <div className="container">
+            <div className="intro">
+              <div className="dp">
+                <img alt="dp" src="../dp.jpg" />
+              </div>
+              <div>
+                <h1>
+                  Hi, I'm <b>Iris Yang</b>!
+                </h1>
+                <div className="description">
+                  {/* <h2>Iris Yang</h2>
                       <h4>UNSW Student</h4>
                       <p>I develop scalable, user-friendly web applications and am passionate about continuous learning.</p> */}
-              {/* <h3>
+                  {/* <h3>
                 I develop scalable, user-friendly <b>web
                 applications</b> and am passionate about <b>continuous learning</b>.
               </h3> */}
-              IT Student based in Sydney, Australia.
-            </div>
+                  IT Student based in Sydney, Australia.
+                </div>
+              
             <div className="menu">
               <ul>
                 <li onClick={() => handleSectionOnclick("about")}>About</li>
@@ -105,21 +99,23 @@ const App = () => {
                 <ResumeLogo alt="Resume" />
               </a>
             </div>
+            </div>
+            </div>
           </div>
-          <div className="right pt-md pb-md">
-            {/* <PageSlide checked={checked} section={section}/> */}
-            <div class="slide" ref={AboutRef}>
-              <About />
-            </div>
-            <div class="slide" ref={ExpRef}>
-              <Experience />
-            </div>
-            <div class="slide" ref={ProjectRef}>
-              <Projects />
-            </div>
-            <div class="slide" ref={EduRef}>
-              <Education />
-            </div>
+        </div>
+        <div className="right pt-md pb-md">
+          {/* <PageSlide checked={checked} section={section}/> */}
+          <div class="slide" ref={AboutRef}>
+            <About />
+          </div>
+          <div class="slide" ref={ExpRef}>
+            <Experience />
+          </div>
+          <div class="slide" ref={ProjectRef}>
+            <Projects />
+          </div>
+          <div class="slide" ref={EduRef}>
+            <Education />
           </div>
         </div>
       </div>

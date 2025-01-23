@@ -15,8 +15,8 @@ const Projects = () => {
     <>
       <h2>Projects</h2>
       <div className="card-list">
-        <div className="proj-section card-color">
-          <h4>AnyParking</h4>
+        <div className="proj-section card card-color">
+          <div>AnyParking</div>
           <p>
             The <b>Car Space Renting Management System</b> connects parking
             suppliers and customers. <b>Providers</b> can offer spots and
@@ -42,10 +42,10 @@ const Projects = () => {
         </div>
 
         <div
-          className="proj-section card-color"
+          className="proj-section card card-color"
           onClick={() => openUrl("LmTraceMap")}
         >
-          <h4>LmTraceMap</h4>
+          <div>LmTraceMap</div>
           <p>
             A <b>global tracking website</b> specifically designed for experts
             to <b>monitor the spread of L.monocytogenes</b>, a challenging
