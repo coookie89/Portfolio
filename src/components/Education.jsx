@@ -23,7 +23,7 @@ const Experience = () => {
             <div className="company-name">
               University Of New South Wales, Australia
             </div>
-            <p>
+            <p className="mt-4">
               Master of Information Technology (M.I.T.),
               <br />
               specialising in Database Systems
@@ -45,7 +45,7 @@ const Experience = () => {
           <div className="left">Sep 2018 - Sep 2022</div>
           <div style={{ width: "60%" }}>
             <div className="company-name">Chang Gung University, Taiwan</div>
-            <p>
+            <p className="mt-4">
               Bachelor of Science (B.S.) in Computer Science and Information
               Engineering
             </p>

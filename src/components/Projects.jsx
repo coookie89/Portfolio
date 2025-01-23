@@ -17,7 +17,7 @@ const Projects = () => {
       <div className="card-list">
         <div className="proj-section card card-color">
           <div>AnyParking</div>
-          <p>
+          <p className="mt-4">
             The <b>Car Space Renting Management System</b> connects parking
             suppliers and customers. <b>Providers</b> can offer spots and
             establish fees, while&nbsp;
@@ -32,6 +32,7 @@ const Projects = () => {
             spacing={{ xs: 1, sm: 1 }}
             flexWrap="wrap"
             useFlexGap
+            className="mt-4"
           >
             <Chip label="React" />
             <Chip label="Django" />
@@ -46,7 +47,7 @@ const Projects = () => {
           onClick={() => openUrl("LmTraceMap")}
         >
           <div>LmTraceMap</div>
-          <p>
+          <p className="mt-4">
             A <b>global tracking website</b> specifically designed for experts
             to <b>monitor the spread of L.monocytogenes</b>, a challenging
             bacterium to track due to its presence in food shipments worldwide.
@@ -60,6 +61,7 @@ const Projects = () => {
             spacing={{ xs: 1, sm: 1 }}
             flexWrap="wrap"
             useFlexGap
+            className="mt-4"
           >
             <Chip label="VanillaJS" />
             <Chip label="Python" />

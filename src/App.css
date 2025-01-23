@@ -195,8 +195,16 @@ h3, h4, h5, h6 {
   width: 75%;
 }
 
-.education p {
-  margin-bottom: 0;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+p {
+  margin: 0;
 }
 
 .company-name {

@@ -56,13 +56,6 @@ const App = () => {
                   Hi, I'm <b>Iris Yang</b>!
                 </h1>
                 <div className="description">
-                  {/* <h2>Iris Yang</h2>
-                      <h4>UNSW Student</h4>
-                      <p>I develop scalable, user-friendly web applications and am passionate about continuous learning.</p> */}
-                  {/* <h3>
-                I develop scalable, user-friendly <b>web
-                applications</b> and am passionate about <b>continuous learning</b>.
-              </h3> */}
                   IT Student based in Sydney, Australia.
                 </div>
               

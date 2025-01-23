@@ -26,12 +26,12 @@ const Experience = () => {
           <div className="right">
             <span>Marketing Coordinator</span>
             <div className="company-name">PICA Group, Sydney, Australia</div>
-            <p>
+            <p className="mt-4">
               Digitalized physical forms to streamline workflows. Extracted and
               processed customer information from various data sources for
               newsletters.
             </p>
-            <div>
+            <div className="mt-4">
               <Stack
                 direction="row"
                 spacing={{ xs: 0.5, sm: 0.5 }}
@@ -61,13 +61,13 @@ const Experience = () => {
             <div className="company-name">
               Chang Gung University Of Science And Technology, Taiwan
             </div>
-            <p>
+            <p className="mt-4">
               Developed Linebots using the <b>LINE API SDKs</b>, including
               profile page, patient list, Scale form, handbook of dementia care,
               viewing patient&#39;s record and exporting patient&#39;s history
               report in Excel format.
             </p>
-            <div>
+            <div className="mt-4">
               <Stack
                 direction="row"
                 spacing={{ xs: 0.5, sm: 0.5 }}
@@ -92,12 +92,12 @@ const Experience = () => {
           <div className="right">
             <div>Python Teaching Assistant</div>
             <div className="company-name">Chang Gung University, Taiwan</div>
-            <p>
+            <p className="mt-4">
               Tutored 30+ students in <b>learning Python from scratch</b>,
               providing guidance on fundamental concepts and empowered them to{" "}
               <b>extract information from websites</b> they are interested in.
             </p>
-            <div>
+            <div className="mt-4">
               <Stack
                 direction="row"
                 spacing={{ xs: 0.5, sm: 0.5 }}
@@ -121,14 +121,14 @@ const Experience = () => {
           <div className="right">
             <div>Internship</div>
             <div className="company-name">Academia Sinica, Taiwan</div>
-            <p>
+            <p className="mt-4">
               Collected and reformatted 10,000+ terms of{" "}
               <b>Taigi corpus database</b> and utilised PyTorch to{" "}
               <b>train open-sourced text-to-speech (TTS) models</b>
               &nbsp;for Taigi, enhancing the availability of TTS resources for
               Taiwanese speakers.
             </p>
-            <div>
+            <div className="mt-4">
               <Stack
                 direction="row"
                 spacing={{ xs: 0.5, sm: 0.5 }}
