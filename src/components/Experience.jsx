@@ -19,9 +19,6 @@ const Experience = () => {
           className="exp-section card-color"
           onClick={() => openUrl("cgust")}
         >
-          <div className="exp-left">
-            <h4>Feb 2022 - Oct 2022</h4>
-          </div>
           <div className="exp-right">
             <h4>Linebot Developer</h4>
             <h4 className="company-name">
@@ -44,12 +41,13 @@ const Experience = () => {
               <Chip label="Line" />
             </Stack>
           </div>
+          <div className="exp-left">
+            <h4>Feb 2022 - Oct 2022</h4>
+          </div>
         </div>
 
         <div className="exp-section card-color" onClick={() => openUrl("cgu")}>
-          <div className="exp-left">
-            <h4>Sep 2021 - Sep 2022</h4>
-          </div>
+          
           <div className="exp-right">
             <h4>Python Teaching Assistant</h4>
             <h4 className="company-name">Chang Gung University, Taiwan</h4>
@@ -68,15 +66,16 @@ const Experience = () => {
               <Chip label="BeautifulSoup" />
             </Stack>
           </div>
+          <div className="exp-left">
+            <h4>Sep 2021 - Sep 2022</h4>
+          </div>
         </div>
 
         <div
           className="exp-section card-color"
           onClick={() => openUrl("sinica")}
         >
-          <div className="exp-left">
-            <h4>Sep 2021 - Sep 2022</h4>
-          </div>
+          
           <div className="exp-right">
             <h4>Internship</h4>
             <h4 className="company-name">Academia Sinica, Taiwan</h4>
@@ -101,6 +100,9 @@ const Experience = () => {
               <Chip label="MySQL" />
               <Chip label="Machine Learning" />
             </Stack>
+          </div>
+          <div className="exp-left">
+            <h4>Sep 2021 - Sep 2022</h4>
           </div>
         </div>
       </div>
