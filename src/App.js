@@ -2,14 +2,19 @@ import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 // import PageSlide from './PageSlide';
+import { pink } from "@mui/material/colors";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
-import "./App.css";
 
+// logo
+import { ReactComponent as LinkedLogo } from "./logo/linkedin.svg";
+import { ReactComponent as GithubLogo } from "./logo/github.svg";
+import { ReactComponent as ResumeLogo } from "./logo/resume.svg";
+
+import "./App.css";
 
 const App = () => {
   const [checked, setChecked] = React.useState(false);
@@ -42,9 +47,8 @@ const App = () => {
     if (type === "github") url = "https://github.com/coookie89";
     else if (type === "linkedin")
       url = "https://www.linkedin.com/in/chien-hwa-yang";
-    else if (type === "resume") 
-      url = "./Resume_IrisYang.pdf";
-      window.open(url);
+    else if (type === "resume") url = "./Resume_IrisYang.pdf";
+    window.open(url);
   };
 
   return (
@@ -66,7 +70,7 @@ const App = () => {
                 I develop scalable, user-friendly <b>web
                 applications</b> and am passionate about <b>continuous learning</b>.
               </h3> */}
-                Student based in Sydney, Australia.
+              Student based in Sydney, Australia.
             </div>
             <div className="menu">
               <ul>
@@ -74,38 +78,32 @@ const App = () => {
                 <li onClick={() => handleSectionOnclick("experience")}>
                   Experience
                 </li>
-                <li onClick={() => handleSectionOnclick("projects")}>Projects</li>
+                <li onClick={() => handleSectionOnclick("projects")}>
+                  Projects
+                </li>
                 <li onClick={() => handleSectionOnclick("education")}>
                   Education
                 </li>
               </ul>
             </div>
             <div className="avatar">
-              <Stack
-                direction="row"
-                spacing={{ xs: 1, sm: 1 }}
-                flexWrap="wrap"
-                useFlexGap
+              <a
+                href="https://www.linkedin.com/in/chien-hwa-yang"
+                target="_blank"
+                rel="noreferrer"
               >
-                <Chip
-                  avatar={<Avatar alt="GitHub" src="github-icon.png" />}
-                  label="GitHub"
-                  variant="outlined"
-                  onClick={() => openUrl("github")}
-                />
-                <Chip
-                  avatar={<Avatar alt="LinkedIn" src="linkedin-icon.webp" />}
-                  label="LinkedIn"
-                  variant="outlined"
-                  onClick={() => openUrl("linkedin")}
-                />
-                <Chip
-                  avatar={<AccountCircleRoundedIcon />}
-                  label="Resume"
-                  variant="outlined"
-                  onClick={() => openUrl("resume")}
-                />
-              </Stack>
+                <LinkedLogo alt="Linkedin" />
+              </a>
+              <a
+                href="https://github.com/coookie89"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GithubLogo alt="GitHub" />
+              </a>
+              <a href="./Resume_IrisYang.pdf" target="_blank" rel="noreferrer">
+                <ResumeLogo alt="Resume" />
+              </a>
             </div>
           </div>
           <div className="right pt-md pb-md">
