@@ -1,7 +1,7 @@
 const openUrl = (type) => {
   let url;
   if (type === "cgu") url = "https://www.cgu.edu.tw/en";
-  else if (type === "unsw") url = "https://www.sinica.edu.tw/en";
+  else if (type === "unsw") url = "https://www.unsw.edu.au";
   window.open(url);
 };
 
@@ -20,14 +20,12 @@ const Experience = () => {
                 University Of New South Wales, Australia
               </div>
               <p className="mt-4">
-                Master of Information Technology (M.I.T.),
-                <br />
-                specialising in Database Systems
+                Master of Information Technology (M.I.T.), specialising in Database Systems
               </p>
             </div>
             <div className="preview">
               <img
-                alt="cgu-logo"
+                alt="unsw-logo"
                 src="./img/UNSW.png"
                 style={{ width: "100%", borderRadius: "15%" }}
               ></img>
