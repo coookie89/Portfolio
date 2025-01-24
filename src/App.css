@@ -111,7 +111,7 @@ main {
   margin: auto;
 }
 
-.dp img {
+.dp > img {
   width: calc(100% - 7px - 7px);
   border-radius: 50%;
   border: 5px solid var(--secondary-color);
@@ -283,6 +283,12 @@ p {
   .dp {
     width: 60%;
     padding: 0 40px;
+  }
+
+  .dp .decor {
+    position: absolute;
+    width: 20%;
+    padding-top: -10px;
   }
 
   .left-container > .container {

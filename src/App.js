@@ -43,8 +43,18 @@ const App = () => {
         <div className="left-container pt-md pb-md pl-lg">
           <div className="container">
             <div className="intro">
-              <div className="dp">
-                <img alt="dp" src="../dp.jpg" />
+              <div>
+                <div className="dp">
+                <div className="decor">
+                    <img
+                      alt="star"
+                      src="../shine.png"
+                      style={{ position:"relative", width: "100px", marginBottom: "-50px", marginLeft: "-30px",  zIndex: "1000"}}
+                    />
+                  </div>
+                  <img alt="dp" src="../dp.jpg" />
+                  
+                </div>
               </div>
               <div>
                 <h1>

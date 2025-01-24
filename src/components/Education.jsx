@@ -10,7 +10,7 @@ const Experience = () => {
     <>
       <h2>Education</h2>
       <div className="card-list education">
-        <div className="card flexbox card-color" onClick={() => openUrl("cgu")}>
+        <div className="card flexbox card-color" onClick={() => openUrl("unsw")}>
           <div className="left">
             <div>May 2023 - May 2025</div>
           </div>
@@ -35,7 +35,7 @@ const Experience = () => {
 
         <div
           className="card flexbox card-color"
-          onClick={() => openUrl("unsw")}
+          onClick={() => openUrl("cgu")}
         >
           <div className="left">Sep 2018 - Sep 2022</div>
           <div className="right flexbox">
