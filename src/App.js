@@ -44,8 +44,8 @@ const App = () => {
 
   return (
     <main>
-      <div className="main-container mr-lg ml-lg">
-        <div className="left pt-md pb-md">
+      <div className="main-container">
+        <div className="left pt-md pb-md pl-lg">
           <div className="container">
             <div className="intro">
               <div className="dp">
@@ -96,7 +96,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="right pt-md pb-md">
+        <div className="right pt-md pb-md pr-lg">
           {/* <PageSlide checked={checked} section={section}/> */}
           <div class="slide" ref={AboutRef}>
             <About />

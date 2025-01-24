@@ -1,9 +1,0 @@
-.company-name {
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: 400ms;
-}
-
-.exp-section:hover .company-name {
-    text-decoration-color: black;
-}

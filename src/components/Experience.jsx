@@ -1,6 +1,5 @@
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import "./Experience.css";
 
 const openUrl = (type) => {
   let url;
@@ -24,8 +23,9 @@ const Experience = () => {
             <span>Feb 2022 - Present</span>
           </div>
           <div className="right">
-            <span>Marketing Coordinator</span>
-            <div className="company-name">PICA Group, Sydney, Australia</div>
+            <div className="card-title">
+              <span>Marketing Coordinator</span> · <span>PICA Group, Australia</span>
+            </div>
             <p className="mt-4">
               Digitalized physical forms to streamline workflows. Extracted and
               processed customer information from various data sources for
@@ -57,9 +57,8 @@ const Experience = () => {
         >
           <div className="left">Feb 2022 - Oct 2022</div>
           <div className="right">
-            <div>Linebot Developer</div>
-            <div className="company-name">
-              Chang Gung University Of Science And Technology, Taiwan
+            <div className="card-title">
+              <span>Linebot Developer</span> · <span>CGUST, Taiwan</span>
             </div>
             <p className="mt-4">
               Developed Linebots using the <b>LINE API SDKs</b>, including
@@ -90,8 +89,9 @@ const Experience = () => {
             <div>Sep 2021 - Sep 2022</div>
           </div>
           <div className="right">
-            <div>Python Teaching Assistant</div>
-            <div className="company-name">Chang Gung University, Taiwan</div>
+            <div className="card-title">
+              <span>Python Teaching Assistant</span> · <span>CGU, Taiwan</span>
+            </div>
             <p className="mt-4">
               Tutored 30+ students in <b>learning Python from scratch</b>,
               providing guidance on fundamental concepts and empowered them to{" "}
@@ -119,8 +119,9 @@ const Experience = () => {
             <div>Sep 2021 - Sep 2022</div>
           </div>
           <div className="right">
-            <div>Internship</div>
-            <div className="company-name">Academia Sinica, Taiwan</div>
+            <div className="card-title">
+              <span>Internship</span> · <span>Academia Sinica, Taiwan</span>
+            </div>
             <p className="mt-4">
               Collected and reformatted 10,000+ terms of{" "}
               <b>Taigi corpus database</b> and utilised PyTorch to{" "}

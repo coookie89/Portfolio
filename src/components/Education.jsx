@@ -1,4 +1,3 @@
-import "./Experience.css";
 
 const openUrl = (type) => {
   let url;
@@ -20,7 +19,7 @@ const Experience = () => {
             <div>May 2023 - May 2025</div>
           </div>
           <div style={{ width: "60%" }}>
-            <div className="company-name">
+            <div className="card-title">
               University Of New South Wales, Australia
             </div>
             <p className="mt-4">
@@ -44,7 +43,7 @@ const Experience = () => {
         >
           <div className="left">Sep 2018 - Sep 2022</div>
           <div style={{ width: "60%" }}>
-            <div className="company-name">Chang Gung University, Taiwan</div>
+            <div className="card-title">Chang Gung University, Taiwan</div>
             <p className="mt-4">
               Bachelor of Science (B.S.) in Computer Science and Information
               Engineering

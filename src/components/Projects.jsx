@@ -1,6 +1,5 @@
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import "./Experience.css";
 
 const openUrl = (type) => {
   let url;
@@ -16,7 +15,7 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="card-list">
         <div className="proj-section card card-color">
-          <div>AnyParking</div>
+          <div className="card-title">AnyParking</div>
           <p className="mt-4">
             The <b>Car Space Renting Management System</b> connects parking
             suppliers and customers. <b>Providers</b> can offer spots and
@@ -46,7 +45,7 @@ const Projects = () => {
           className="proj-section card card-color"
           onClick={() => openUrl("LmTraceMap")}
         >
-          <div>LmTraceMap</div>
+          <div className="card-title">LmTraceMap</div>
           <p className="mt-4">
             A <b>global tracking website</b> specifically designed for experts
             to <b>monitor the spread of L.monocytogenes</b>, a challenging
