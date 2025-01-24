@@ -123,17 +123,18 @@ ul {
   list-style-image: url('./line.svg');
 }
 
-ul li {
-  cursor: pointer;
-}
-
 ul {
   margin: 5% 0;
-
 }
 
 .menu {
   flex-grow: 2;
+}
+
+.menu ul li:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 .description {

@@ -1,15 +1,10 @@
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
-// import PageSlide from './PageSlide';
-import { pink } from "@mui/material/colors";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 
-// logo
+// logos
 import { ReactComponent as LinkedLogo } from "./logo/linkedin.svg";
 import { ReactComponent as GithubLogo } from "./logo/github.svg";
 import { ReactComponent as ResumeLogo } from "./logo/resume.svg";
@@ -58,41 +53,45 @@ const App = () => {
                 <div className="description">
                   IT Student based in Sydney, Australia.
                 </div>
-              
-            <div className="menu">
-              <ul>
-                <li onClick={() => handleSectionOnclick("about")}>About</li>
-                <li onClick={() => handleSectionOnclick("experience")}>
-                  Experience
-                </li>
-                <li onClick={() => handleSectionOnclick("projects")}>
-                  Projects
-                </li>
-                <li onClick={() => handleSectionOnclick("education")}>
-                  Education
-                </li>
-              </ul>
-            </div>
-            <div className="avatar">
-              <a
-                href="https://www.linkedin.com/in/chien-hwa-yang"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LinkedLogo alt="Linkedin" />
-              </a>
-              <a
-                href="https://github.com/coookie89"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GithubLogo alt="GitHub" />
-              </a>
-              <a href="./Resume_IrisYang.pdf" target="_blank" rel="noreferrer">
-                <ResumeLogo alt="Resume" />
-              </a>
-            </div>
-            </div>
+
+                <div className="menu">
+                  <ul>
+                    <li onClick={() => handleSectionOnclick("about")}>About</li>
+                    <li onClick={() => handleSectionOnclick("education")}>
+                      Education
+                    </li>
+                    <li onClick={() => handleSectionOnclick("experience")}>
+                      Experience
+                    </li>
+                    <li onClick={() => handleSectionOnclick("projects")}>
+                      Projects
+                    </li>
+                  </ul>
+                </div>
+                <div className="avatar">
+                  <a
+                    href="https://www.linkedin.com/in/chien-hwa-yang"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <LinkedLogo alt="Linkedin" />
+                  </a>
+                  <a
+                    href="https://github.com/coookie89"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <GithubLogo alt="GitHub" />
+                  </a>
+                  <a
+                    href="./Resume_IrisYang.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <ResumeLogo alt="Resume" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -101,14 +100,14 @@ const App = () => {
           <div class="slide" ref={AboutRef}>
             <About />
           </div>
+          <div class="slide" ref={EduRef}>
+            <Education />
+          </div>
           <div class="slide" ref={ExpRef}>
             <Experience />
           </div>
           <div class="slide" ref={ProjectRef}>
             <Projects />
-          </div>
-          <div class="slide" ref={EduRef}>
-            <Education />
           </div>
         </div>
       </div>
