@@ -13,8 +13,34 @@ const Projects = () => {
   return (
     <>
       <h2>Projects</h2>
-      <div className="card-list">
-        <div className="proj-section card card-color">
+      <div className="card-list" id="projects">
+        <div className="card card-color">
+          <img src="./img/Preview/Notey.png" alt="preview" height="100%" width="100%"/>
+          <div className="card-title">Notey — Master Your Notes, Master Your Learning</div>
+          <p className="mt-4">
+            Notey helps you digest slides effortlessly. Simply upload
+            your slides, and we'll generate <b>concise notes</b> and transform them
+            into an intuitive <b>mind map</b>. Research shows that mind maps enhance learning and
+            retention. Our team, all Information Technology students, struggled
+            with massive lecture slides. Every time
+            we finished revising, we had to go through it all again just to
+            reinforce our understanding. That's why we created Notey—to
+            streamline revision and make learning smarter!
+          </p>
+          <Stack
+            direction="row"
+            spacing={{ xs: 1, sm: 1 }}
+            flexWrap="wrap"
+            useFlexGap
+            className="mt-4"
+          >
+            <Chip label="React" />
+            <Chip label="FastAPI" />
+            <Chip label="Groq" />
+          </Stack>
+        </div>
+
+        <div className="card card-color">
           <div className="card-title">AnyParking</div>
           <p className="mt-4">
             The <b>Car Space Renting Management System</b> connects parking
@@ -42,7 +68,7 @@ const Projects = () => {
         </div>
 
         <div
-          className="proj-section card card-color"
+          className="card card-color"
           onClick={() => openUrl("LmTraceMap")}
         >
           <div className="card-title">LmTraceMap</div>
