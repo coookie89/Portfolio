@@ -12,7 +12,6 @@ import { ReactComponent as ResumeLogo } from "./logo/resume.svg";
 import "./App.css";
 
 const App = () => {
-  const [checked, setChecked] = React.useState(false);
   const [section, setSection] = React.useState("about");
 
   const AboutRef = React.useRef();
@@ -20,22 +19,47 @@ const App = () => {
   const EduRef = React.useRef();
   const ProjectRef = React.useRef();
 
-  function handleBackClick(type) {
-    if (type === "about")
-      AboutRef.current.scrollIntoView({ behavior: "smooth" });
-    else if (type === "experience")
-      ExpRef.current.scrollIntoView({ behavior: "smooth" });
-    else if (type === "projects")
-      ProjectRef.current.scrollIntoView({ behavior: "smooth" });
-    else if (type === "education")
-      EduRef.current.scrollIntoView({ behavior: "smooth" });
-  }
-
   const handleSectionOnclick = (type) => {
-    handleBackClick(type);
+    document.getElementById(type).scrollIntoView({ behavior: "smooth" });
     setSection(type);
-    setChecked((prev) => !prev);
   };
+
+  React.useEffect(() => {
+    const rightContainer = document.querySelector(".right-container");
+    rightContainer.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      rightContainer.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Function to handle scroll event
+  const handleScroll = () => {
+    // Get the scroll position of the container
+    const scrollPosition = document.querySelector(".right-container").scrollTop;
+
+    // Get all sections inside the .right-container
+    const sections = document.querySelectorAll(".right-container .slide");
+
+    // Loop through the sections to check if they are in view
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop; // The top position of the section
+      const sectionHeight = section.offsetHeight; // The height of the section
+
+      // Check if the section is currently in the view (based on scrollTop)
+      if (
+        scrollPosition >= sectionTop - window.innerHeight &&
+        scrollPosition < sectionTop + sectionHeight
+      ) {
+        setSection(section.id); // Mark the section as active
+      }
+    });
+  };
+
+  React.useEffect(() => {
+    console.log(section);
+  }, [section]);
 
   return (
     <main>
@@ -45,15 +69,20 @@ const App = () => {
             <div className="intro">
               <div>
                 <div className="dp">
-                <div className="decor">
+                  <div className="decor">
                     <img
                       alt="star"
                       src="../shine.png"
-                      style={{ position:"relative", width: "100px", marginBottom: "-50px", marginLeft: "-30px",  zIndex: "1000"}}
+                      style={{
+                        position: "relative",
+                        width: "100px",
+                        marginBottom: "-50px",
+                        marginLeft: "-30px",
+                        zIndex: "1000",
+                      }}
                     />
                   </div>
                   <img alt="dp" src="../dp.jpg" />
-                  
                 </div>
               </div>
               <div>
@@ -64,16 +93,30 @@ const App = () => {
                   IT Student based in Sydney, Australia.
                 </div>
 
-                <div className="menu">
+                <div className="menu mt-4 mb-4">
                   <ul>
-                    <li onClick={() => handleSectionOnclick("about")}>About</li>
-                    <li onClick={() => handleSectionOnclick("education")}>
+                    <li
+                      onClick={() => handleSectionOnclick("about")}
+                      className={section === "about" ? "active" : ""}
+                    >
+                      About
+                    </li>
+                    <li
+                      onClick={() => handleSectionOnclick("education")}
+                      className={section === "education" ? "active" : ""}
+                    >
                       Education
                     </li>
-                    <li onClick={() => handleSectionOnclick("experience")}>
+                    <li
+                      onClick={() => handleSectionOnclick("experience")}
+                      className={section === "experience" ? "active" : ""}
+                    >
                       Experience
                     </li>
-                    <li onClick={() => handleSectionOnclick("projects")}>
+                    <li
+                      onClick={() => handleSectionOnclick("projects")}
+                      className={section === "projects" ? "active" : ""}
+                    >
                       Projects
                     </li>
                   </ul>
@@ -106,17 +149,16 @@ const App = () => {
           </div>
         </div>
         <div className="right-container pt-md pb-md pr-lg">
-          {/* <PageSlide checked={checked} section={section}/> */}
-          <div class="slide" ref={AboutRef}>
+          <div className="slide" ref={AboutRef} id="about">
             <About />
           </div>
-          <div class="slide" ref={EduRef}>
+          <div className="slide" ref={EduRef} id="education">
             <Education />
           </div>
-          <div class="slide" ref={ExpRef}>
+          <div className="slide" ref={ExpRef} id="experience">
             <Experience />
           </div>
-          <div class="slide" ref={ProjectRef}>
+          <div className="slide" ref={ProjectRef} id="projects">
             <Projects />
           </div>
         </div>
