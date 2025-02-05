@@ -13,10 +13,10 @@ const Projects = () => {
   return (
     <>
       <h2>Projects</h2>
-      <div className="card-list" id="projects">
+      <div className="card-list" id="project">
         <div className="card card-color">
-          <img src="./img/Preview/Notey.png" alt="preview" height="100%" width="100%"/>
-          <div className="card-title">Notey — Master Your Notes, Master Your Learning</div>
+          <img src="./img/Preview/Notey.png" alt="preview"/>
+          <div className="card-title mt-4">Notey — Master Your Notes, Master Your Learning</div>
           <p className="mt-4">
             Notey helps you digest slides effortlessly. Simply upload
             your slides, and we'll generate <b>concise notes</b> and transform them

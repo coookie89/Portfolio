@@ -99,6 +99,25 @@ main {
   flex-direction: column;
 }
 
+#project.card-list {
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+
+#project .card {
+  flex: 1 1 160px; /* flex-grow, flex-shrink, flex-basis */
+}
+
+#project .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 /* .right .slide:nth-child(even) {
   background-color: antiquewhite;
 }
