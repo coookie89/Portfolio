@@ -15,17 +15,14 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="card-list" id="project">
         <div className="card card-color">
-          <img src="./img/Preview/Notey.png" alt="preview"/>
-          <div className="card-title mt-4">Notey — Master Your Notes, Master Your Learning</div>
+          <img src="./img/Preview/Notey.png" alt="preview" />
+          <div className="card-title mt-4">Notey — Master Your Learning</div>
           <p className="mt-4">
-            Notey helps you digest slides effortlessly. Simply upload
-            your slides, and we'll generate <b>concise notes</b> and transform them
-            into an intuitive <b>mind map</b>. Research shows that mind maps enhance learning and
-            retention. Our team, all Information Technology students, struggled
-            with massive lecture slides. Every time
-            we finished revising, we had to go through it all again just to
-            reinforce our understanding. That's why we created Notey—to
-            streamline revision and make learning smarter!
+            Ever finished reading a slide deck only to forget its content by the
+            last page? Notey is here to help! By <b>generating mind maps</b>{" "}
+            from uploaded slides, Notey provides an intuitive way to{" "}
+            <b>revise and retain key information</b>, ensuring you never lose
+            track of important details again.
           </p>
           <Stack
             direction="row"
@@ -41,16 +38,13 @@ const Projects = () => {
         </div>
 
         <div className="card card-color">
-          <div className="card-title">AnyParking</div>
+          <img src="./img/Preview/AnyParking.png" alt="preview" />
+          <div className="card-title mt-4">AnyParking</div>
           <p className="mt-4">
-            The <b>Car Space Renting Management System</b> connects parking
-            suppliers and customers. <b>Providers</b> can offer spots and
-            establish fees, while&nbsp;
-            <b>customers</b> can browse, reserve, and pay for parking. The
-            system provides security through user roles (admin, supplier, and
-            consumer) and contains capabilities for billing, payment, and
-            feedback. This platform intends to <b>maximise parking space use</b>
-            , improve urban mobility, and alleviate parking stress.
+            Finding parking shouldn't be a hassle. AnyParking connects space
+            owners with drivers, making it easy to list, reserve, and pay for
+            parking. With secure user roles, built-in billing, and feedback
+            features, it helps <b>maximize space use</b>, <b>ease urban congestion</b>, and <b>reduce parking frustration</b>.
           </p>
           <Stack
             direction="row"
@@ -61,16 +55,11 @@ const Projects = () => {
           >
             <Chip label="React" />
             <Chip label="Django" />
-            <Chip label="Python" />
             <Chip label="SQLite" />
-            <Chip label="Postman" />
           </Stack>
         </div>
 
-        <div
-          className="card card-color"
-          onClick={() => openUrl("LmTraceMap")}
-        >
+        <div className="card card-color" onClick={() => openUrl("LmTraceMap")}>
           <div className="card-title">LmTraceMap</div>
           <p className="mt-4">
             A <b>global tracking website</b> specifically designed for experts
