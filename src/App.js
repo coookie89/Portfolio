@@ -62,7 +62,7 @@ const App = () => {
         <div className="left-container pt-md pb-md pl-lg">
           <div className="container">
             <div className="intro">
-              <div>
+              <div className="upper">
                 <div className="dp">
                   <div className="decor">
                     <img
@@ -80,15 +80,15 @@ const App = () => {
                   <img alt="dp" src="../dp.jpg" />
                 </div>
               </div>
-              <div>
-                <h1 className="mt-4">
-                  Hi, I'm <b>Iris Yang</b>!
-                </h1>
-                <div className="description mt-4">
+              <div className="lower">
+              <h1>
+                Hi, I'm <b>Iris Yang</b>!
+              </h1>
+                <div className="description">
                   IT Student based in Sydney, Australia.
                 </div>
 
-                <div className="menu mt-8">
+                <div className="menu">
                   <ul>
                     <li
                       onClick={() => handleSectionOnclick("about")}
@@ -120,7 +120,7 @@ const App = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="avatar mt-8">
+                <div className="avatar">
                   <a
                     href="https://www.linkedin.com/in/chien-hwa-yang"
                     target="_blank"
