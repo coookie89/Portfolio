@@ -20,8 +20,13 @@ const App = () => {
   const ProjectRef = React.useRef();
 
   const handleSectionOnclick = (type) => {
+    const rightContainer = document.querySelector(".right-container");
+    // Temporarily remove the scroll event listener
+    rightContainer.removeEventListener("scroll", handleScroll);
+
     document.getElementById(type).scrollIntoView({ behavior: "smooth" });
     setSection(type);
+    rightContainer.addEventListener("scroll", handleScroll);
   };
 
   React.useEffect(() => {
@@ -46,20 +51,16 @@ const App = () => {
     sections.forEach((section) => {
       const sectionTop = section.offsetTop; // The top position of the section
       const sectionHeight = section.offsetHeight; // The height of the section
+      console.log(section.id, scrollPosition, sectionTop, sectionHeight);
 
-      // Check if the section is currently in the view (based on scrollTop)
       if (
-        scrollPosition >= sectionTop - window.innerHeight &&
-        scrollPosition < sectionTop + sectionHeight
+        scrollPosition >= sectionTop &&
+        scrollPosition <= sectionTop + sectionHeight
       ) {
         setSection(section.id); // Mark the section as active
       }
     });
   };
-
-  React.useEffect(() => {
-    console.log(section);
-  }, [section]);
 
   return (
     <main>
