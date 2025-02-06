@@ -81,42 +81,46 @@ const App = () => {
                 </div>
               </div>
               <div>
-                <h1>
+                <h1 className="mt-4">
                   Hi, I'm <b>Iris Yang</b>!
                 </h1>
-                <div className="description">
+                <div className="description mt-4">
                   IT Student based in Sydney, Australia.
                 </div>
 
-                <div className="menu mt-4 mb-4">
+                <div className="menu mt-8">
                   <ul>
                     <li
                       onClick={() => handleSectionOnclick("about")}
                       className={section === "about" ? "active" : ""}
                     >
+                      <div className="list-item"></div>
                       About
                     </li>
                     <li
                       onClick={() => handleSectionOnclick("education")}
                       className={section === "education" ? "active" : ""}
                     >
+                      <div className="list-item"></div>
                       Education
                     </li>
                     <li
                       onClick={() => handleSectionOnclick("experience")}
                       className={section === "experience" ? "active" : ""}
                     >
+                      <div className="list-item"></div>
                       Experience
                     </li>
                     <li
                       onClick={() => handleSectionOnclick("projects")}
                       className={section === "projects" ? "active" : ""}
                     >
+                      <div className="list-item"></div>
                       Projects
                     </li>
                   </ul>
                 </div>
-                <div className="avatar">
+                <div className="avatar mt-8">
                   <a
                     href="https://www.linkedin.com/in/chien-hwa-yang"
                     target="_blank"
