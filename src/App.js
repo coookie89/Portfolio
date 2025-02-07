@@ -45,8 +45,6 @@ const App = () => {
     sections.forEach((section) => {
       const sectionTop = section.offsetTop; // The top position of the section
       const sectionHeight = section.offsetHeight; // The height of the section
-      console.log(section.id, scrollPosition, sectionTop, sectionHeight);
-
       if (
         scrollPosition > sectionTop - 5 &&
         scrollPosition <= sectionTop + sectionHeight + 5
