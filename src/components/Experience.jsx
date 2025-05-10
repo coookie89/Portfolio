@@ -24,7 +24,7 @@ const Experience = () => {
           </div>
           <div className="right">
             <div className="card-title">
-              <span>Marketing Coordinator</span> · <span>PICA Group, Australia</span>
+              <span>Digital Marketing Coordinator</span> · <span>PICA Group, Australia</span>
             </div>
             <p className="mt-4">
               Digitalized physical forms to streamline workflows. Extracted and

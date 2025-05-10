@@ -62,9 +62,7 @@ const App = () => {
             <div className="intro">
               <div className="upper">
                 <div className="dp">
-                  <div
-                    style={{ display: "flex", justifyContent: "flex-start" }}
-                  >
+                  <div className="star-container">
                     <img
                       alt="star"
                       src="../shine.png"
@@ -72,7 +70,7 @@ const App = () => {
                     />
                   </div>
                   <img alt="dp" src="../dp.jpg" className="dp-img" />
-                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <div className="star-container-end">
                     <img
                       alt="star"
                       src="../shine.png"
