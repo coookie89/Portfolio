@@ -62,26 +62,29 @@ const App = () => {
             <div className="intro">
               <div className="upper">
                 <div className="dp">
-                  <div className="decor">
+                  <div
+                    style={{ display: "flex", justifyContent: "flex-start" }}
+                  >
                     <img
                       alt="star"
                       src="../shine.png"
-                      style={{
-                        position: "relative",
-                        width: "100px",
-                        marginBottom: "-50px",
-                        marginLeft: "-30px",
-                        zIndex: "1000",
-                      }}
+                      className="star star-top-left"
                     />
                   </div>
-                  <img alt="dp" src="../dp.jpg" />
+                  <img alt="dp" src="../dp.jpg" className="dp-img" />
+                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                    <img
+                      alt="star"
+                      src="../shine.png"
+                      className="star star-bottom-right"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="lower">
-              <h1>
-                Hi, I'm <b>Iris Yang</b>!
-              </h1>
+                <h1>
+                  Hi, I'm <b>Iris Yang</b>!
+                </h1>
                 <div className="description">
                   IT Student based in Sydney, Australia.
                 </div>
@@ -120,7 +123,7 @@ const App = () => {
                 </div>
                 <div className="avatar">
                   <a
-                    href="https://www.linkedin.com/in/chien-hwa-yang"
+                    href="https://www.linkedin.com/in/irisssssyang"
                     target="_blank"
                     rel="noreferrer"
                   >
