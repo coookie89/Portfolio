@@ -29,7 +29,7 @@ const Experience = () => {
             <p className="mt-4">
               Digitalized physical forms to streamline workflows. Extracted and
               processed customer information from various data sources for
-              newsletters.
+              Marketing events.
             </p>
             <div className="mt-4">
               <Stack
